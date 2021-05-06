@@ -1,9 +1,9 @@
 package crafting
 
 import core.properties.Tags
-import org.junit.Test
-import kotlin.test.assertEquals
-import kotlin.test.assertTrue
+import org.testng.annotations.Test
+import org.testng.Assert.assertEquals
+import org.testng.Assert.assertTrue
 
 class RecipeIngredientTest {
 

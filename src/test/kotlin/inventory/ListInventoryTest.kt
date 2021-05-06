@@ -9,11 +9,11 @@ import core.target.Target
 import core.target.item.ITEM_TAG
 import createClosedChest
 import createItem
-import org.junit.Test
+import org.testng.annotations.Test
 import system.BodyFakeParser
 import traveling.location.location.LocationRecipe
 import traveling.location.location.LocationParser
-import kotlin.test.assertEquals
+import org.testng.Assert.assertEquals
 
 class ListInventoryTest {
 

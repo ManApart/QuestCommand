@@ -6,7 +6,7 @@ import core.properties.Properties
 import core.properties.Tags
 import core.target.Target
 import org.junit.Assert
-import org.junit.Test
+import org.testng.annotations.Test
 
 class RecipeManagerTest {
 
@@ -22,7 +22,7 @@ class RecipeManagerTest {
         RecipeManager.reset()
 
         val results = RecipeManager.findCraftableRecipes(ingredients, tool, baker.soul)
-        Assert.assertEquals(recipe, results.first())
+        assertEquals(recipe, results.first())
     }
 
     @Test
@@ -37,7 +37,7 @@ class RecipeManagerTest {
         RecipeManager.reset()
 
         val results = RecipeManager.findCraftableRecipes(ingredients, tool, baker.soul)
-        Assert.assertEquals(recipe, results.first())
+        assertEquals(recipe, results.first())
     }
 
     @Test
@@ -52,7 +52,7 @@ class RecipeManagerTest {
         RecipeManager.reset()
 
         val results = RecipeManager.findCraftableRecipes(ingredients, tool, baker.soul)
-        Assert.assertEquals(recipe, results.first())
+        assertEquals(recipe, results.first())
     }
 
     @Test
@@ -67,7 +67,7 @@ class RecipeManagerTest {
         RecipeManager.reset()
 
         val results = RecipeManager.findCraftableRecipes(ingredients, tool, baker.soul)
-        Assert.assertTrue(results.isEmpty())
+        assertTrue(results.isEmpty())
     }
 
     @Test
@@ -82,7 +82,7 @@ class RecipeManagerTest {
         RecipeManager.reset()
 
         val results = RecipeManager.findCraftableRecipes(ingredients, tool, baker.soul)
-        Assert.assertTrue(results.isEmpty())
+        assertTrue(results.isEmpty())
     }
 
     @Test
@@ -97,7 +97,7 @@ class RecipeManagerTest {
         RecipeManager.reset()
 
         val results = RecipeManager.findCraftableRecipes(ingredients, tool, baker.soul)
-        Assert.assertTrue(results.isEmpty())
+        assertTrue(results.isEmpty())
     }
 
     @Test
@@ -112,7 +112,7 @@ class RecipeManagerTest {
         RecipeManager.reset()
 
         val results = RecipeManager.findCraftableRecipes(ingredients, tool, baker.soul)
-        Assert.assertTrue(results.isEmpty())
+        assertTrue(results.isEmpty())
     }
 
 

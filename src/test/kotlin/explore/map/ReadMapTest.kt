@@ -6,8 +6,8 @@ import traveling.location.location.LocationNode
 import traveling.location.location.LocationPoint
 import core.history.ChatHistory
 import org.junit.Assert
-import org.junit.Before
-import org.junit.Test
+import org.testng.annotations.BeforeClass
+import org.testng.annotations.Test
 
 class ReadMapTest {
 
@@ -24,7 +24,7 @@ class ReadMapTest {
         val listener = ReadMap()
         listener.execute(event)
         val actual = ChatHistory.getLastOutput()
-        Assert.assertEquals("My Place is a part of Wilderness. It has no known neighbors.", actual)
+        assertEquals("My Place is a part of Wilderness. It has no known neighbors.", actual)
     }
 
     @Test
@@ -36,7 +36,7 @@ class ReadMapTest {
         val listener = ReadMap()
         listener.execute(event)
         val actual = ChatHistory.getLastOutput()
-        Assert.assertEquals("My Place is a part of Wilderness. It is neighbored by:\n" +
+        assertEquals("My Place is a part of Wilderness. It is neighbored by:\n" +
                 "  Name         Distance  Direction Path  \n" +
                 "  Destination  10        N               \n", actual)
     }
@@ -54,7 +54,7 @@ class ReadMapTest {
         val listener = ReadMap()
         listener.execute(event)
         val actual = ChatHistory.getLastOutput()
-        Assert.assertEquals("My Place is a part of Wilderness. It is neighbored by:\n" +
+        assertEquals("My Place is a part of Wilderness. It is neighbored by:\n" +
                 "  Name   Distance  Direction Path  \n" +
                 "  north  10        N               \n" +
                 "  south  10        S               \n" +

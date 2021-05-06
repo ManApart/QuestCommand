@@ -12,17 +12,17 @@ import createPouch
 import inventory.pickupItem.TakeItem
 import inventory.pickupItem.TakeItemEvent
 import org.junit.After
-import org.junit.Before
-import org.junit.Test
+import org.testng.annotations.BeforeClass
+import org.testng.annotations.Test
 import system.BodyFakeParser
 import system.location.LocationFakeParser
 import traveling.location.location.LocationManager
 import traveling.location.location.LocationParser
 import traveling.location.location.NOWHERE_NODE
-import kotlin.test.assertEquals
+import org.testng.Assert.assertEquals
 import kotlin.test.assertNotNull
 import kotlin.test.assertNull
-import kotlin.test.assertTrue
+import org.testng.Assert.assertTrue
 
 class TakeItemTest {
 

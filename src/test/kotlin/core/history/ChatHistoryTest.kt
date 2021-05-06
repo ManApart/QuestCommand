@@ -1,28 +1,28 @@
 package core.history
 
-import org.junit.Assert
-import org.junit.Before
-import org.junit.Test
+import org.testng.Assert.assertEquals
+import org.testng.annotations.BeforeClass
+import org.testng.annotations.Test
 
 class ChatHistoryTest {
 
-    @Before
+    @BeforeClass
     fun setup(){
         ChatHistory.reset()
     }
 
     @Test
     fun beforeChatHistoryIsEmpty(){
-        Assert.assertEquals(InputOutput().input, ChatHistory.getLastInput())
-        Assert.assertEquals("", ChatHistory.getLastOutput())
-        Assert.assertEquals(0, ChatHistory.history.size)
+        assertEquals(InputOutput().input, ChatHistory.getLastInput())
+        assertEquals("", ChatHistory.getLastOutput())
+        assertEquals(0, ChatHistory.history.size)
     }
 
     @Test
     fun displayAddsMessageToHistory(){
         val message = "Test Message"
         display(message)
-        Assert.assertEquals(InputOutput().input, ChatHistory.getLastInput())
-        Assert.assertEquals(message, ChatHistory.getLastOutput())
+        assertEquals(InputOutput().input, ChatHistory.getLastInput())
+        assertEquals(message, ChatHistory.getLastOutput())
     }
 }

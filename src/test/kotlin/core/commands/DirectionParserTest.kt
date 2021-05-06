@@ -2,8 +2,8 @@ package core.commands
 
 import traveling.direction.Direction
 import traveling.position.Vector
-import org.junit.Test
-import kotlin.test.assertEquals
+import org.testng.annotations.Test
+import org.testng.Assert.assertEquals
 
 class DirectionParserTest {
     @Test

@@ -4,8 +4,8 @@ import traveling.location.location.LocationNode
 import traveling.location.ProtoConnection
 import core.utility.NameSearchableList
 import org.junit.Assert
-import org.junit.BeforeClass
-import org.junit.Test
+import org.testng.annotations.BeforeClassClass
+import org.testng.annotations.Test
 import core.DependencyInjector
 import traveling.location.location.LocationManager
 import traveling.location.location.LocationParser
@@ -32,8 +32,8 @@ class LocationRecipeManagerTest {
         DependencyInjector.setImplementation(LocationParser::class.java, fakeParser)
         LocationManager.reset()
 
-        Assert.assertEquals(source, LocationManager.getNetwork("Wilderness").getLocationNode(source.name))
-        Assert.assertEquals(neighborLink.connection.location, LocationManager.getNetwork("Wilderness").findLocation(neighborLink.connection.location).name)
+        assertEquals(source, LocationManager.getNetwork("Wilderness").getLocationNode(source.name))
+        assertEquals(neighborLink.connection.location, LocationManager.getNetwork("Wilderness").findLocation(neighborLink.connection.location).name)
     }
 
     @Test
@@ -51,15 +51,15 @@ class LocationRecipeManagerTest {
         val neighborDoesNotExists = LocationManager.getNetwork("Wilderness").findLocation(neighborDoesNotExistsName)
 
         //No Duplicate Nodes
-        Assert.assertEquals(source, LocationManager.getNetwork("Wilderness").getLocationNode(source.name))
-        Assert.assertEquals(neighborExists, LocationManager.getNetwork("Wilderness").findLocation(neighborExists.name))
-        Assert.assertEquals(neighborDoesNotExistsName, neighborDoesNotExists.name)
-        Assert.assertEquals(3, LocationManager.getNetwork("Wilderness").countLocationNodes())
+        assertEquals(source, LocationManager.getNetwork("Wilderness").getLocationNode(source.name))
+        assertEquals(neighborExists, LocationManager.getNetwork("Wilderness").findLocation(neighborExists.name))
+        assertEquals(neighborDoesNotExistsName, neighborDoesNotExists.name)
+        assertEquals(3, LocationManager.getNetwork("Wilderness").countLocationNodes())
 
         //No Duplicate Links
-        Assert.assertEquals(2, source.getNeighborConnections().size)
-        Assert.assertEquals(1, neighborExists.getNeighborConnections().size)
-        Assert.assertEquals(1, neighborDoesNotExists.getNeighborConnections().size)
+        assertEquals(2, source.getNeighborConnections().size)
+        assertEquals(1, neighborExists.getNeighborConnections().size)
+        assertEquals(1, neighborDoesNotExists.getNeighborConnections().size)
     }
 
     @Test
@@ -72,10 +72,10 @@ class LocationRecipeManagerTest {
         DependencyInjector.setImplementation(LocationParser::class.java, fakeParser)
         LocationManager.reset()
 
-        Assert.assertEquals(source, LocationManager.getNetwork("Wilderness").getLocationNode(source.name))
-        Assert.assertEquals(neighbor, LocationManager.getNetwork("Wilderness").getLocationNode(neighbor.name))
-        Assert.assertEquals(1, source.getNeighborConnections().size)
-        Assert.assertEquals(0, neighbor.getNeighborConnections().size)
+        assertEquals(source, LocationManager.getNetwork("Wilderness").getLocationNode(source.name))
+        assertEquals(neighbor, LocationManager.getNetwork("Wilderness").getLocationNode(neighbor.name))
+        assertEquals(1, source.getNeighborConnections().size)
+        assertEquals(0, neighbor.getNeighborConnections().size)
 
     }
 
@@ -87,7 +87,7 @@ class LocationRecipeManagerTest {
         DependencyInjector.setImplementation(LocationParser::class.java, fakeParser)
         LocationManager.reset()
 
-        Assert.assertEquals(source.name, source.getLocationRecipe().name)
+        assertEquals(source.name, source.getLocationRecipe().name)
     }
 
 

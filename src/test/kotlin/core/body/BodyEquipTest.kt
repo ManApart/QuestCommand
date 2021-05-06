@@ -1,9 +1,9 @@
 package core.body
 
 import core.target.Target
-import org.junit.Test
+import org.testng.annotations.Test
 import traveling.location.location.LocationRecipe
-import kotlin.test.assertEquals
+import org.testng.Assert.assertEquals
 
 class BodyEquipTest {
 

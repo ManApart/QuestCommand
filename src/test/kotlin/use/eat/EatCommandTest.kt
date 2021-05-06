@@ -17,19 +17,19 @@ import core.target.Target
 import core.target.item.ITEM_TAG
 import core.utility.PoorMansInstrumenter
 import org.junit.AfterClass
-import org.junit.Before
-import org.junit.BeforeClass
-import org.junit.Test
+import org.testng.annotations.BeforeClass
+import org.testng.annotations.BeforeClassClass
+import org.testng.annotations.Test
 import system.BodyFakeParser
 import system.location.LocationFakeParser
 import traveling.location.location.LocationManager
 import traveling.location.location.LocationParser
 import traveling.location.location.NOWHERE_NODE
 import use.StartUseEvent
-import kotlin.test.assertEquals
+import org.testng.Assert.assertEquals
 import kotlin.test.assertNotNull
 import kotlin.test.assertNull
-import kotlin.test.assertTrue
+import org.testng.Assert.assertTrue
 
 class EatCommandTest {
 

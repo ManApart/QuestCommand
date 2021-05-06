@@ -8,16 +8,16 @@ import core.ai.behavior.BehaviorsCollection
 import core.ai.behavior.BehaviorsMock
 import core.body.BodyManager
 import core.target.Target
-import magic.spellCommands.SpellCommandsMock
 import magic.spellCommands.SpellCommandsCollection
-import org.junit.AfterClass
-import org.junit.Test
+import magic.spellCommands.SpellCommandsMock
+import org.testng.Assert.assertEquals
+import org.testng.annotations.AfterClass
+import org.testng.annotations.Test
 import system.BodyFakeParser
 import system.location.LocationFakeParser
-import traveling.location.location.LocationRecipe
 import traveling.location.location.LocationNode
 import traveling.location.location.LocationParser
-import kotlin.test.assertEquals
+import traveling.location.location.LocationRecipe
 
 //TODO - use for more than just spells (attacks, interact etc)
 //TODO - test inventory target parsing

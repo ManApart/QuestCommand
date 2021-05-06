@@ -1,9 +1,9 @@
 package time
 
-import org.junit.Test
+import org.testng.annotations.Test
 import org.junit.runner.RunWith
 import org.junit.runners.Parameterized
-import kotlin.test.assertEquals
+import org.testng.Assert.assertEquals
 
 @RunWith(Parameterized::class)
 class TimeManagerDateTest(private val ticks: Int, private val expectedDays: Int, private val expectedMonths: Int, private val expectedYears: Int) {

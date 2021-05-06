@@ -1,7 +1,7 @@
 package core.history
 
-import org.junit.Test
-import kotlin.test.assertTrue
+import org.testng.annotations.Test
+import org.testng.Assert.assertTrue
 
 class StringTableTest {
 

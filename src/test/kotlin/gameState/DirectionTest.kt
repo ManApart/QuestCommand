@@ -1,8 +1,8 @@
 package gameState
 
-import org.junit.Test
+import org.testng.annotations.Test
 import traveling.direction.Direction
-import kotlin.test.assertEquals
+import org.testng.Assert.assertEquals
 
 class DirectionTest {
 

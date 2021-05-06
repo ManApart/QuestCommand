@@ -3,7 +3,7 @@ package system
 import core.DependencyInjector
 import core.body.NONE
 import org.junit.Assert
-import org.junit.Test
+import org.testng.annotations.Test
 import core.body.BodyManager
 import traveling.location.location.LocationParser
 import kotlin.test.assertNotNull
@@ -21,7 +21,7 @@ class BodyManagerTest {
         DependencyInjector.setImplementation(LocationParser::class.java, bodyParser)
         BodyManager.reset()
 
-        Assert.assertTrue(BodyManager.bodyExists("Human"))
+        assertTrue(BodyManager.bodyExists("Human"))
     }
 
 }

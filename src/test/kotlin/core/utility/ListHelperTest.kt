@@ -1,8 +1,7 @@
 package core.utility
 
-import core.ai.action.AIAction
-import org.junit.Test
-import kotlin.test.*
+import org.testng.Assert.*
+import org.testng.annotations.Test
 
 class ListHelperTest {
 
@@ -63,13 +62,13 @@ class ListHelperTest {
     @Test
     fun safeSubListPreventsEndBefore0() {
         val sublist = listOf(0,1,2,3).safeSubList(0, -1)
-        assertEquals(listOf(), sublist)
+        assertEquals(listOf<Int>(), sublist)
     }
 
     @Test
     fun safeSubListPreventsEndBeforeStart() {
         val sublist = listOf(0,1,2,3).safeSubList(2, 1)
-        assertEquals(listOf(), sublist)
+        assertEquals(listOf<Int>(), sublist)
     }
 
     @Test
@@ -81,7 +80,7 @@ class ListHelperTest {
     @Test
     fun safeSubListPreventsStartGreaterThanSize() {
         val sublist = listOf(0,1,2,3).safeSubList(5, 6)
-        assertEquals(listOf(), sublist)
+        assertEquals(listOf<Int>(), sublist)
     }
 
 }

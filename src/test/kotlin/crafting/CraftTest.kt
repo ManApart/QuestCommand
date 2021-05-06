@@ -13,20 +13,18 @@ import crafting.craft.CraftRecipeEvent
 import createItem
 import createPouch
 import inventory.pickupItem.TakeItem
-import org.junit.Before
-import org.junit.Test
+import org.testng.Assert.*
+import org.testng.annotations.BeforeClass
+import org.testng.annotations.Test
 import system.BodyFakeParser
 import system.ItemFakeParser
 import system.location.LocationFakeParser
 import traveling.location.location.LocationManager
 import traveling.location.location.LocationParser
-import kotlin.test.assertFalse
-import kotlin.test.assertNotNull
-import kotlin.test.assertTrue
 
 class CraftTest {
 
-    @Before
+    @BeforeClass
     fun setup() {
 
         val locationParser = LocationFakeParser()

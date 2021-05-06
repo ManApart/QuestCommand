@@ -1,11 +1,11 @@
 package gameState
 
-import org.junit.Test
+import org.testng.annotations.Test
 import traveling.direction.Direction
 import traveling.position.Vector
-import kotlin.test.assertEquals
-import kotlin.test.assertFalse
-import kotlin.test.assertTrue
+import org.testng.Assert.assertEquals
+import org.testng.Assert.assertFalse
+import org.testng.Assert.assertTrue
 
 class VectorTest {
     private val center = Vector()

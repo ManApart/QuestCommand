@@ -5,14 +5,14 @@ import core.GameManager
 import core.GameState
 import core.body.BodyManager
 import core.target.Target
-import org.junit.BeforeClass
-import org.junit.Test
+import org.testng.annotations.BeforeClassClass
+import org.testng.annotations.Test
 import system.BodyFakeParser
 import system.location.LocationFakeParser
 import traveling.location.location.LocationManager
 import traveling.location.location.LocationParser
 import use.interaction.InteractEvent
-import kotlin.test.assertEquals
+import org.testng.Assert.assertEquals
 
 class QuestListenerTest {
 

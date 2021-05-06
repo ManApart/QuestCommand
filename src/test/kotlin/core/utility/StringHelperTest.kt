@@ -1,7 +1,7 @@
 package core.utility
 
-import org.junit.Test
-import kotlin.test.assertEquals
+import org.testng.annotations.Test
+import org.testng.Assert.assertEquals
 
 class StringHelperTest {
 

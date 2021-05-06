@@ -1,11 +1,11 @@
 package core.properties
 
-import org.junit.Test
+import org.testng.annotations.Test
 import status.stat.AIR_MAGIC
 import status.stat.HEALTH
 import status.stat.WATER_MAGIC
 import traveling.location.location.HEAT
-import kotlin.test.assertEquals
+import org.testng.Assert.assertEquals
 
 class GuardsTest {
 

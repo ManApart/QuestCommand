@@ -8,13 +8,13 @@ import core.body.BodyManager
 import core.target.Target
 import inventory.dropItem.PlaceItem
 import inventory.dropItem.PlaceItemEvent
-import org.junit.Before
-import org.junit.Test
+import org.testng.annotations.BeforeClass
+import org.testng.annotations.Test
 import system.BodyFakeParser
 import system.location.LocationFakeParser
 import traveling.location.location.*
 import kotlin.test.assertNull
-import kotlin.test.assertTrue
+import org.testng.Assert.assertTrue
 
 class PlaceItemTest {
 

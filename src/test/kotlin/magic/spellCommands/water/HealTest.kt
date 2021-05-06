@@ -16,8 +16,8 @@ import magic.spellCommands.SpellCommandsMock
 import magic.spellCommands.SpellCommandsCollection
 import magic.spells.Spell
 import org.junit.AfterClass
-import org.junit.Before
-import org.junit.Test
+import org.testng.annotations.BeforeClass
+import org.testng.annotations.Test
 import status.effects.EffectBase
 import status.effects.EffectFakeParser
 import status.effects.EffectManager
@@ -29,9 +29,9 @@ import system.BodyFakeParser
 import system.location.LocationFakeParser
 import traveling.location.location.LocationManager
 import traveling.location.location.LocationParser
-import kotlin.test.assertEquals
+import org.testng.Assert.assertEquals
 import kotlin.test.assertNotNull
-import kotlin.test.assertTrue
+import org.testng.Assert.assertTrue
 
 class HealTest {
     companion object {

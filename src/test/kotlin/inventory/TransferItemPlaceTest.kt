@@ -18,12 +18,12 @@ import createPackMule
 import createPouch
 import inventory.putItem.TransferItem
 import inventory.putItem.TransferItemEvent
-import org.junit.Before
-import org.junit.Test
+import org.testng.annotations.BeforeClass
+import org.testng.annotations.Test
 import system.BodyFakeParser
 import system.location.LocationFakeParser
 import traveling.location.location.*
-import kotlin.test.assertEquals
+import org.testng.Assert.assertEquals
 import kotlin.test.assertNotNull
 import kotlin.test.assertNull
 

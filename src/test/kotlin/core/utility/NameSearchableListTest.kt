@@ -1,10 +1,7 @@
 package core.utility
 
-import org.junit.Assert.assertEquals
-import org.junit.Test
-import kotlin.test.assertFalse
-import kotlin.test.assertNull
-import kotlin.test.assertTrue
+import org.testng.Assert.*
+import org.testng.annotations.Test
 
 class NameSearchableListTest {
 

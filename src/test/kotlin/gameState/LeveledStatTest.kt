@@ -2,8 +2,8 @@ package gameState
 
 import core.target.Target
 import status.stat.LeveledStat
-import org.junit.Test
-import kotlin.test.assertEquals
+import org.testng.annotations.Test
+import org.testng.Assert.assertEquals
 
 class LeveledStatTest {
     private val statName = "Coding"

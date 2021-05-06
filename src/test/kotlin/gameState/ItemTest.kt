@@ -4,9 +4,9 @@ import core.properties.Properties
 import core.properties.Tags
 import core.target.Target
 import core.properties.Values
-import org.junit.Test
-import kotlin.test.assertFalse
-import kotlin.test.assertTrue
+import org.testng.annotations.Test
+import org.testng.Assert.assertFalse
+import org.testng.Assert.assertTrue
 
 class ItemTest {
 

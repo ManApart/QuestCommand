@@ -11,15 +11,15 @@ import core.body.createBody
 import createItem
 import createPouch
 import inventory.Inventory
-import org.junit.Before
-import org.junit.Test
+import org.testng.annotations.BeforeClass
+import org.testng.annotations.Test
 import system.BodyFakeParser
 import system.location.LocationFakeParser
 import traveling.location.location.LocationManager
 import traveling.location.location.LocationParser
 import traveling.location.location.LocationRecipe
-import kotlin.test.assertEquals
-import kotlin.test.assertTrue
+import org.testng.Assert.assertEquals
+import org.testng.Assert.assertTrue
 
 
 class InventoryTest {

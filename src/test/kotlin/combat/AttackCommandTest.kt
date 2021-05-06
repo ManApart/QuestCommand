@@ -6,16 +6,17 @@ import core.DependencyInjector
 import core.GameManager
 import core.GameState
 import core.ai.AIManager
-import core.ai.dsl.AIsCollection
-import core.ai.dsl.AIsMock
 import core.ai.behavior.BehaviorManager
 import core.ai.behavior.BehaviorsCollection
 import core.ai.behavior.BehaviorsMock
+import core.ai.dsl.AIsCollection
+import core.ai.dsl.AIsMock
 import core.body.BodyManager
 import core.events.EventManager
 import core.target.Target
-import org.junit.Before
-import org.junit.Test
+import org.testng.Assert.assertEquals
+import org.testng.annotations.BeforeClass
+import org.testng.annotations.Test
 import system.BodyFakeParser
 import system.location.LocationFakeParser
 import traveling.location.location.LocationManager
@@ -23,12 +24,11 @@ import traveling.location.location.LocationParser
 import traveling.location.weather.WeatherFakeParser
 import traveling.location.weather.WeatherManager
 import traveling.location.weather.WeatherParser
-import kotlin.test.assertEquals
 
 class AttackCommandTest {
     private val command = AttackCommand()
 
-    @Before
+    @BeforeClass
     fun setup() {
         val bodyParser = BodyFakeParser.parserWithFakePlayer()
         DependencyInjector.setImplementation(LocationParser::class.java, bodyParser)

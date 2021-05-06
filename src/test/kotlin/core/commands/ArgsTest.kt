@@ -1,9 +1,7 @@
 package core.commands
 
-import org.junit.Test
-import kotlin.test.assertEquals
-import kotlin.test.assertFalse
-import kotlin.test.assertTrue
+import org.testng.Assert.*
+import org.testng.annotations.Test
 
 class ArgsTest {
 
@@ -18,9 +16,9 @@ class ArgsTest {
         assertEquals("rat", args.getString("of"))
         assertEquals("", args.getString("with"))
 
-        assertEquals(listOf(), args.getGroup("base"))
+        assertEquals(listOf<String>(), args.getGroup("base"))
         assertEquals(listOf("rat"), args.getGroup("of"))
-        assertEquals(listOf(), args.getGroup("with"))
+        assertEquals(listOf<String>(), args.getGroup("with"))
     }
 
     @Test

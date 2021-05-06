@@ -3,9 +3,9 @@ package conversation.parsing
 import conversation.dialogue.ParsedDialogue
 import core.target.Target
 import injectAllDefaultMocks
-import org.junit.BeforeClass
-import org.junit.Test
-import kotlin.test.assertEquals
+import org.testng.Assert.assertEquals
+import org.testng.annotations.BeforeClass
+import org.testng.annotations.Test
 
 class SentenceParserTest {
 

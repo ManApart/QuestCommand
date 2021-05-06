@@ -1,9 +1,9 @@
 package magic
 
 import org.junit.AfterClass
-import org.junit.Before
-import org.junit.BeforeClass
-import org.junit.Test
+import org.testng.annotations.BeforeClass
+import org.testng.annotations.BeforeClassClass
+import org.testng.annotations.Test
 import core.DependencyInjector
 import core.events.EventManager
 import magic.castSpell.CastCommand

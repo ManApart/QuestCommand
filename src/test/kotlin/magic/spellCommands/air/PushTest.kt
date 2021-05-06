@@ -16,8 +16,8 @@ import magic.spellCommands.SpellCommandsMock
 import magic.spellCommands.SpellCommandsCollection
 import magic.spells.MoveTargetSpell
 import org.junit.AfterClass
-import org.junit.Before
-import org.junit.Test
+import org.testng.annotations.BeforeClass
+import org.testng.annotations.Test
 import status.effects.EffectBase
 import status.effects.EffectFakeParser
 import status.effects.EffectManager
@@ -31,7 +31,7 @@ import traveling.position.NO_VECTOR
 import traveling.position.Vector
 import traveling.location.location.LocationManager
 import traveling.location.location.LocationParser
-import kotlin.test.assertEquals
+import org.testng.Assert.assertEquals
 import kotlin.test.assertNotNull
 
 class PushTest {

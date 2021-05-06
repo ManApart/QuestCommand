@@ -5,14 +5,12 @@ import core.ai.AIManager
 import core.ai.action.AIAction
 import core.ai.action.dsl.AIActionsCollection
 import core.ai.action.dsl.AIActionsMock
-import org.junit.Before
-import org.junit.Test
-import kotlin.test.assertEquals
-import kotlin.test.assertFails
-import kotlin.test.assertTrue
+import org.testng.Assert.*
+import org.testng.annotations.BeforeClass
+import org.testng.annotations.Test
 
 class AIBaseBuilderTest {
-    @Before
+    @BeforeClass
     fun setup() {
         DependencyInjector.setImplementation(AIsCollection::class.java, AIsMock())
         val actions = AIActionsMock(listOf(AIAction("run"), AIAction("jump"), AIAction("swim")))
@@ -61,7 +59,7 @@ class AIBaseBuilderTest {
             }
         }
 
-        assertFails { builder.build() }
+        assertThrows { builder.build() }
     }
 
 }

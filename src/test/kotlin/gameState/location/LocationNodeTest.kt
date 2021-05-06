@@ -1,9 +1,9 @@
 package gameState.location
 
 import traveling.direction.Direction
-import org.junit.Test
+import org.testng.annotations.Test
 import traveling.location.location.LocationNode
-import kotlin.test.assertEquals
+import org.testng.Assert.assertEquals
 
 class LocationNodeTest {
 

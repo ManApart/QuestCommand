@@ -1,6 +1,6 @@
 import core.utility.Named
-import kotlin.test.assertEquals
-import kotlin.test.assertTrue
+import org.testng.Assert.assertEquals
+import org.testng.Assert.assertTrue
 
 fun assertEqualsByName(expected: Named, actual: Named) {
     assertEquals(expected.name, actual.name)

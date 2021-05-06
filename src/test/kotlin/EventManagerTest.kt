@@ -1,13 +1,10 @@
-import core.events.Event
-import core.events.EventListener
+
 import core.DependencyInjector
-import core.events.EventListenersCollection
-import core.events.EventManager
-import core.events.EventListenersMock
-import org.junit.AfterClass
-import org.junit.Assert.assertEquals
-import org.junit.BeforeClass
-import org.junit.Test
+import core.events.*
+import org.testng.Assert.assertEquals
+import org.testng.annotations.AfterClass
+import org.testng.annotations.BeforeClass
+import org.testng.annotations.Test
 
 class EventManagerTest {
     private val resultList = mutableListOf<String>()

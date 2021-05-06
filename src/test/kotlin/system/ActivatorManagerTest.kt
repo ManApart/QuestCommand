@@ -9,12 +9,12 @@ import core.target.Target
 import core.target.activator.ActivatorManager
 import core.target.activator.ActivatorParser
 import core.utility.NameSearchableList
-import org.junit.Before
-import org.junit.Test
+import org.testng.annotations.BeforeClass
+import org.testng.annotations.Test
 import system.location.LocationFakeParser
 import traveling.position.NO_VECTOR
 import traveling.location.location.*
-import kotlin.test.assertEquals
+import org.testng.Assert.assertEquals
 
 class ActivatorManagerTest {
 

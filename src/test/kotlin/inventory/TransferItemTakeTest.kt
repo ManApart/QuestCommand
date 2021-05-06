@@ -10,8 +10,8 @@ import createPouch
 import inventory.putItem.TransferItem
 import inventory.putItem.TransferItemEvent
 import org.junit.After
-import org.junit.Before
-import org.junit.Test
+import org.testng.annotations.BeforeClass
+import org.testng.annotations.Test
 import system.BodyFakeParser
 import system.location.LocationFakeParser
 import traveling.location.location.LocationManager

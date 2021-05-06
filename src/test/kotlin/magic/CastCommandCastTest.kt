@@ -3,8 +3,8 @@ package magic
 import traveling.position.TargetAim
 import core.target.Target
 import org.junit.AfterClass
-import org.junit.Before
-import org.junit.Test
+import org.testng.annotations.BeforeClass
+import org.testng.annotations.Test
 import system.BodyFakeParser
 import core.DependencyInjector
 import core.GameState
@@ -18,8 +18,8 @@ import magic.spellCommands.SpellCommandsCollection
 import traveling.location.location.Location
 import traveling.location.location.LocationNode
 import traveling.location.location.LocationParser
-import kotlin.test.assertEquals
-import kotlin.test.assertTrue
+import org.testng.Assert.assertEquals
+import org.testng.Assert.assertTrue
 
 class CastCommandCastTest {
 

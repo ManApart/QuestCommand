@@ -1,7 +1,7 @@
 package quests
 
 import org.junit.Assert
-import org.junit.Test
+import org.testng.annotations.Test
 import use.interaction.InteractEvent
 
 class QuestTest {
@@ -10,14 +10,14 @@ class QuestTest {
     fun questDoesNotAddDuplicateEvents() {
         val events = createEvents("quest", 5)
         val quest = createQuest(events)
-        Assert.assertEquals(5, quest.getAllEvents().size)
+        assertEquals(5, quest.getAllEvents().size)
     }
 
     @Test
     fun questAddsDefaultEventToEvents() {
         val quest = Quest("quest")
         quest.addEvent(StoryEvent("quest", 10, "journal", ConditionalEvents(InteractEvent::class.java)))
-        Assert.assertEquals(1, quest.getAllEvents().size)
+        assertEquals(1, quest.getAllEvents().size)
     }
 
     @Test
@@ -25,7 +25,7 @@ class QuestTest {
         val events = createEvents("quest", 5)
         val quest = createQuest(events)
         quest.calculateListenedForEvents()
-        Assert.assertEquals(events.first(), quest.getListenedForEvents().first())
+        assertEquals(events.first(), quest.getListenedForEvents().first())
     }
 
     @Test
@@ -34,7 +34,7 @@ class QuestTest {
         val events = createEvents("quest", 5)
         val quest = createQuest(events, currentStage)
         quest.calculateListenedForEvents()
-        Assert.assertEquals(currentStage + 1, quest.getListenedForEvents().first().stage)
+        assertEquals(currentStage + 1, quest.getListenedForEvents().first().stage)
     }
 
     @Test
@@ -43,7 +43,7 @@ class QuestTest {
         val events = createEvents("quest", 5)
         val quest = createQuest(events, currentStage)
         quest.calculateListenedForEvents()
-        Assert.assertEquals(events.last(), quest.getListenedForEvents().first())
+        assertEquals(events.last(), quest.getListenedForEvents().first())
     }
 
     @Test
@@ -53,7 +53,7 @@ class QuestTest {
         val quest = createQuest(events, currentStage)
         quest.calculateListenedForEvents()
 
-        Assert.assertTrue(quest.getListenedForEvents().isEmpty())
+        assertTrue(quest.getListenedForEvents().isEmpty())
     }
 
     private fun createEvents(questName: String, number: Int): List<StoryEvent> {

@@ -1,9 +1,9 @@
 package quests
 
-import org.junit.Test
+import org.testng.annotations.Test
 import use.interaction.InteractEvent
-import kotlin.test.assertFalse
-import kotlin.test.assertTrue
+import org.testng.Assert.assertFalse
+import org.testng.Assert.assertTrue
 
 class StoryEventTest {
 

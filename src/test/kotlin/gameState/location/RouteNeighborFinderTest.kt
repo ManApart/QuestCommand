@@ -1,9 +1,9 @@
 package gameState.location
 
-import org.junit.Test
+import org.testng.annotations.Test
 import traveling.location.RouteNeighborFinder
-import kotlin.test.assertEquals
-import kotlin.test.assertFalse
+import org.testng.Assert.assertEquals
+import org.testng.Assert.assertFalse
 
 class RouteNeighborFinderTest {
 

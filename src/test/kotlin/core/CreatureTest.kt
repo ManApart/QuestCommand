@@ -7,8 +7,8 @@ import core.properties.Values
 import core.target.item.ITEM_TAG
 import inventory.createInventoryBody
 import status.stat.STRENGTH
-import org.junit.Test
-import kotlin.test.assertEquals
+import org.testng.annotations.Test
+import org.testng.Assert.assertEquals
 
 class CreatureTest {
 

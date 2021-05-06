@@ -3,11 +3,11 @@ package system.location
 import core.properties.Properties
 import core.properties.Values
 import core.target.Target
-import org.junit.Test
+import org.testng.annotations.Test
 import traveling.location.location.Location
 import traveling.location.location.LocationNode
-import kotlin.test.assertFalse
-import kotlin.test.assertTrue
+import org.testng.Assert.assertFalse
+import org.testng.Assert.assertTrue
 
 class LocationTest {
     @Test
